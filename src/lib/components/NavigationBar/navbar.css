@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+.navbar {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+/* 
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  fill: rgb(96, 96, 96);
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  fill: rgb(13, 13, 13);
+} */
+
+.sidebar {
+  flex-shrink: 0;
+  overflow: hidden;
+  /* width: max-content;
+  border-right: 1px solid rgb(144, 144, 144); */
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+ 
+  justify-content: stretch;
+  position: sticky;
+  left: 0;
+  /* background-color: rgb(32, 32, 32); */
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+.sidebar-open{
+  background-color: rgb(32, 32, 32);
+  width: max-content;
+  border-right: 1px solid rgb(144, 144, 144);
+  padding-right: 2rem;
+}
+
+.sidebar-close {
+  width: 75px;
+  background-image: linear-gradient(to bottom, #d3d3d3, #676767, #d3d3d3);
+
+}
+
+/* .sidebar.open .hidden-sidebar {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+} */
+
+.sidebar .top-sidebar {
+  margin-left: 25px;
+}
+
+.sidebar .channel-logo {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+/* .sidebar.open .channel-logo {
+  width: 90px;
+  height: 90px;
+} */
+
+/* .sidebar .channel-logo > img {
+  width: 100%;
+  height: 100%;
+} */
+
+.middle-sidebar {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  margin: 1rem 0;
+}
+
+.middle-sidebar{
+  width: 100%;
+}
+
+/* .container {
+  display: flex;
+} */
+
+/* .content {
+  margin: 1rem;
+} */
+
+.sidebar-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+/* .sidebar.open .sidebar-link {
+  justify-content: flex-start;
+} */
+
+.sidebar-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar-list .hidden-sidebar {
+  margin-left: 1.5rem;
+  white-space: nowrap;
+}
+
+.sidebar-link {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding-left: 25px;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+.horizontal-sidebar-link {
+  text-decoration: none;
+  color: white;
+}
+.sidebar-list-item {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  fill: white;
+  color: white;
+}
+
+.sidebar-list-item.active {
+  fill: white;
+  color: white;
+}
+
+.sidebar-list-item:hover {
+  color: white;
+}
+
+.sidebar-list-item.active::before {
+  content: "";
+  background-color: white;
+  height: 100%;
+  left: 0;
+  width: 3px;
+  position: absolute;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.your-channel {
+  color: rgb(13, 13, 13);
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 0.15rem;
+  margin-top: 0.5rem;
+}
+
+.channel-name {
+  color: rgb(96, 96, 96);
+  font-size: 0.75rem;
+}
+
+.sidebar .top-sidebar {
+  height: 30px;
+}
+
+.sidebar.open .top-sidebar {
+  height: 125px;
+  padding-right: 2rem;
+}
+
+.sidebar .top-sidebar .hidden-sidebar {
+  text-align: center;
+  width: 100%;
+}
+
+
+.sidebar-close .hidden-sidebar {
+  opacity: 0;
+  width: 0;
+}
+
+.horizontal-wrapper {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 12px;
+  border-radius: 5px;
+  gap: 24px;
+  align-items: center;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+.navigation-left {
+  display: flex;
+}
+.navigation-middle {
+  display: flex;
+  gap: 15px;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+/* .menuicon{
+    width: 40px;
+    height: 40px;
+  } */
+.sidebar-link img {
+  width: 30px;
+  height: 30px;
+}

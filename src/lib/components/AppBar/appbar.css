@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+/* .appBar-wrapper{
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+} */
+
+.appbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  gap: 24px;
+  align-items: center;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+.appbar-left {
+  color: white;
+  display: flex;
+  /* flex-basis: 70%; */
+  gap: 10px;
+  align-items: center;
+  gap: 20px;
+  padding: 7px 0;
+}
+.appbar-right {
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.appbar-wrapperdefault {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 5px;
+  gap: 24px;
+  align-items: center;
+}
+.appbar-leftdefault {
+  color: white;
+  display: flex;
+  flex-basis: 70%;
+  gap: 10px;
+  align-items: center;
+  gap: 20px;
+  /* padding: 7px 0; */
+}
+.search-inner-icon{
+  position: absolute;
+  padding-left: 8px;
+}
+.appbar-rightdefault {
+  color: white;
+  /* margin-bottom: 5px; */
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-input input[type="text"] {
+  width: 100%;
+  padding: 12px 40px 12px 45px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+}
+.searchicon-new {
+  position: absolute;
+  padding: 0 6px;
+ }
+.app-options {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  align-items: center;
+}
+/* .app-options span{
+  width: max-content;
+} */
+.profile-section {
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-left: 8px;
+  border-left: 1px dashed cadetblue;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-section-style5 {
+  cursor: pointer;
+}
+.profile-logo img {
+  width: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.menuicon {
+  display: block;
+  cursor: pointer;
+  margin-left: 25px;
+  max-width: 40px;
+  max-height: 40px;
+}
+.menuicon svg {
+  width: 40px;
+  height: 40px;
+}
+.menu-without-icon {
+  display: none;
+}
+.searchicon {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 8px 8px 3px;
+  margin-right: 6px;
+}
+.searchicon-style5 {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 4px 5px 0px;
+  margin-right: 6px;
+  max-width: 25px;
+  max-height: 25px;
+}
+/* .searchicon-style5 img{
+ width: 25px;
+ height: 25px;
+} */
+.notification-icon{
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 8px 3px;
+  margin-right: 6px;
+  max-width: 25px;
+  max-height: 25px;
+}
+/* .notification-icon img{
+  width: 25px;
+  height: 25px;
+ } */
+.searchicon-two {
+  display: block;
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 8px 3px;
+  margin-right: 6px;
+}
+.searchicon-two svg {
+  width: 20px;
+  height: 20px;
+}
+.profileicon-two {
+  display: block;
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 8px 3px;
+  margin-right: 6px;
+}
+.profilecon-two svg {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.search-without-icon {
+  display: none;
+}
+/* .logo img {
+  max-width: 85px;
+  max-height: 37px;
+} */
+.logo img {
+ align-items: center;
+} 
+/* .logo{
+  width: 44px;
+  height: 44px;
+} */
+.logo-default img {
+  width: 44px;
+  height: 44px;
+}
+.logo-default{
+  max-width: 80px;
+  max-height: 80px;
+}
+.searchicon-default {
+  display: block;
+  cursor: pointer;
+  margin-right: 6px;
+  max-width: 40px;
+  max-height: 40px;
+}
+.searchicon-default svg{
+  max-width: 40px;
+  max-height: 40px;
+}
+.app-options-default {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  align-items: center;
+}

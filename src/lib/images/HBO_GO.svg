@@ -1,0 +1,14 @@
+<svg id="HBO_GO" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Live_TV_Hover" data-name="Live TV Hover" transform="translate(-6844 -115)">
+    <rect id="Rectangle_126" data-name="Rectangle 126" width="24" height="24" transform="translate(6844 115)" fill="none"/>
+    <g id="tv" transform="translate(6846 118)">
+      <g id="Group_34" data-name="Group 34" transform="translate(0 0)">
+        <g id="Group_33" data-name="Group 33" transform="translate(0 0)">
+          <path id="Path_12" data-name="Path 12" d="M187.291,128.236A1.526,1.526,0,0,0,185,129.56v3.892a1.523,1.523,0,0,0,2.291,1.324l3.354-1.946a1.531,1.531,0,0,0,0-2.647Zm-.729,5.155V129.62l3.25,1.886Z" transform="translate(-177.773 -124.435)" fill="#dbdbdb"/>
+          <path id="Path_13" data-name="Path 13" d="M19.219,43.874A.781.781,0,0,0,20,43.092V39.186a3.129,3.129,0,0,0-3.125-3.125H3.125A3.129,3.129,0,0,0,0,39.186V47a3.129,3.129,0,0,0,3.125,3.125H9.219v1.558H6.484a.781.781,0,1,0,0,1.563h7.031a.781.781,0,0,0,0-1.562H10.781V50.124h6.094A3.129,3.129,0,0,0,20,47a.781.781,0,1,0-1.562,0,1.564,1.564,0,0,1-1.562,1.562H3.125A1.564,1.564,0,0,1,1.563,47V39.186a1.564,1.564,0,0,1,1.563-1.563h13.75a1.564,1.564,0,0,1,1.562,1.563v3.906A.781.781,0,0,0,19.219,43.874Z" transform="translate(0 -36.061)" fill="#dbdbdb"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <rect id="Rectangle_3369" data-name="Rectangle 3369" width="24" height="24" fill="none"/>
+</svg>

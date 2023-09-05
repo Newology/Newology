@@ -1,0 +1,7 @@
+<svg id="google_icon" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Ellipse_2_copy" data-name="Ellipse 2 copy" fill="rgba(1,15,29,0)" stroke="#919da7" stroke-linejoin="round" stroke-width="2">
+    <circle cx="23" cy="23" r="23" stroke="none"/>
+    <circle cx="23" cy="23" r="22" fill="none"/>
+  </g>
+  <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M20.632,6.691a2.507,2.507,0,0,0-1.768-1.772C17.3,4.5,11.05,4.5,11.05,4.5s-6.254,0-7.814.419A2.507,2.507,0,0,0,1.468,6.691a26.131,26.131,0,0,0-.418,4.824,26.131,26.131,0,0,0,.418,4.824,2.47,2.47,0,0,0,1.768,1.743c1.56.419,7.814.419,7.814.419s6.254,0,7.814-.419a2.47,2.47,0,0,0,1.768-1.743,26.131,26.131,0,0,0,.418-4.824,26.131,26.131,0,0,0-.418-4.824ZM9,14.475V8.554l5.227,2.961L9,14.475Z" transform="translate(11.604 11.239)" fill="#dbdbdb"/>
+</svg>

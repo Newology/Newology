@@ -1,0 +1,26 @@
+
+  
+  .empty {
+    width: 100%;
+  }
+  .empty--small {
+    max-width: 100px;
+  }
+  .empty--medium {
+    max-width: 150px;
+  }
+  .empty--large {
+    max-width: 200px;
+  }
+ 
+  /* .empty--Landscape {
+    width: 388px;
+  }
+  .empty--Normal {
+    width: 240px;
+    height: 388px;
+  }
+  .empty--Square {
+    width: 164px;
+  }
+   */

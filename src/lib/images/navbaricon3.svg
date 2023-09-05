@@ -1,0 +1,7 @@
+<svg id="ic_tv" data-name="ic/tv" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="ic_tv_background" data-name="ic/tv background" width="40" height="40" fill="none"/>
+  <g id="ic_tv-2" data-name="ic/tv">
+    <rect id="Rectangle_Copy_6" data-name="Rectangle Copy 6" width="39.724" height="39.724" fill="none"/>
+    <path id="Fill_1" data-name="Fill 1" d="M18.031,21.517H8.452v-2.41H2.423a2.383,2.383,0,0,1-1.691-.7A2.224,2.224,0,0,1,0,16.754V2.41A2.315,2.315,0,0,1,.733.728,2.339,2.339,0,0,1,2.423,0H24.06A2.339,2.339,0,0,1,25.75.728a2.315,2.315,0,0,1,.732,1.681l-.056,14.344a2.4,2.4,0,0,1-2.366,2.354H18.031v2.409ZM2.837,2.41a.414.414,0,0,0-.413.413V16.34a.414.414,0,0,0,.413.414H23.646a.414.414,0,0,0,.414-.414V2.823a.414.414,0,0,0-.414-.413Z" transform="translate(6.621 9.103)" fill="#fff"/>
+  </g>
+</svg>

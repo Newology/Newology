@@ -1,0 +1,108 @@
+.button-comp {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  height: auto;
+  min-height: 40px;
+  width:auto;
+  min-width: 80px;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #ff1493;
+  border:1px solid #ff1493;
+}
+/* .button-comp:hover {
+  background-color: #bd0567;
+} */
+.button--full-width{
+  width: 100%;
+}
+.button--filled {
+  color: white;
+  background-color: #ff1493;
+}
+.button--outlined {
+  color: #ffff;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  border: 1px solid #ffff;
+}
+.button--small {
+  font-size: 16px;
+  padding: 16px;
+}
+.button--medium {
+  font-size: 18px;
+  padding: 20px;
+}
+.button--large {
+  font-size: 20px;
+  padding: 24px;
+}
+.button--blunt {
+  border-radius: 5px !important;
+}
+.button--sharp {
+  border-radius: 0 !important;
+}
+.button--rounded {
+  border-radius: 50px !important;
+}
+.button--action-button {
+  border-radius: 0;
+}
+.button--icon-button {
+  border-radius: 50%;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+}
+.button--icon-button.button--small {
+  font-size: 12px;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+}
+.button--icon-button.button--medium {
+  font-size: 14px;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0;
+}
+.button--icon-button.button--large {
+  font-size: 16px;
+  max-width: 60px;
+  max-height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0;
+}
+.icon-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.icon-label img {
+  max-width: 16px;
+}
+.icon-without-label img {
+  max-width: 16px;
+}
+.button--filled .button-icon {
+    fill: #ffff;
+}
+.button--outlined .button-icon {
+  fill: #ffff;
+}
+.button-icon{
+  fill: #ffff;
+}

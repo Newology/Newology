@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+.vertical-navigation-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  max-width: 215px;
+  margin-bottom: 8.5vh;
+}
+.vertical-navigation-container .vertical-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 69px;
+}
+.vertical-navigation-container
+  .vertical-navigation-wrapper
+  .vertical-navigation-icon
+  img {
+  width: 44px;
+  height: 48px;
+}
+.vertical-navigation-container
+  .vertical-navigation-wrapper
+  .vertical-navigation-title
+  .nav-text-title {
+  margin: 0;
+  font-size: 20px;
+}

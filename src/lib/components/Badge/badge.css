@@ -1,0 +1,78 @@
+.badge {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  height: auto;
+  min-height: 40px;
+  width: fit-content;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff1493;
+  color: white;
+}
+.badge--small {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+.badge--medium {
+  font-size: 16px;
+  padding: 8px 14px;
+}
+.badge--large {
+  font-size: 18px;
+  padding: 10px 18px;
+}
+.badge--rounded {
+  border-radius: 5px !important;
+}
+.badge--sharp {
+  border-radius: 0 !important;
+}
+
+.badge-icon-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.badge-icon-label img {
+  max-width: 20px;
+}
+.badge-icon-without-label img {
+  max-width: 18px;
+}
+.count {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  background: red;
+  height: 15px;
+  border-radius: 50%;
+  line-height: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.badge--small .badge-icon-label > .badgeIcon {
+  height: 14px;
+  width: 14px;
+}
+
+.badge--medium .badge-icon-label > .badgeIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.badge--large .badge-icon-label > .badgeIcon {
+  height: 18px;
+  width: 18px;
+}

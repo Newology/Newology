@@ -1,0 +1,91 @@
+.list-back-arrow {
+  color: white;
+}
+.list-title {
+  color: white;
+  padding-bottom: 16px;
+  border-bottom: 2px solid grey;
+  margin-top: 16px;
+}
+.list-items {
+  color: grey;
+  cursor: pointer;
+}
+.list--rightbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #5a5a5a;
+}
+.list-back-arrow img {
+  width: 20px;
+  height: 20px;
+}
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 32px;
+  min-width: 250px;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.list-items-wrapper {
+  margin-top: 16px;
+}
+.list-item-active {
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  padding: 8px;
+  margin-left: -8px;
+  cursor: pointer;
+}
+.list-item-active::before {
+  content: "\002714";
+  color: white;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.list--leftbar {
+  display: flex;
+  justify-content: flex-start;
+  background-image: linear-gradient(180deg, black, white);
+}
+.profile-wrapper {
+  color: white;
+}
+.login-btn {
+  background-color: fuchsia;
+  align-items: center;
+}
+ input[type="text"].profile-username, input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #172634;
+  box-sizing: border-box;
+  background: #172634;
+}
+button {
+  background-color: #da0769;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.profile-container {
+  padding: 50px;
+  background-color: #051729;
+  margin: 50px;
+}
+.remember-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.profile-wrapper {
+  background-color: #a9a9a9;
+  padding: 50px;
+}

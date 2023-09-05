@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap');
+.sbdocs-wrapper .sbdocs-content{
+  max-width: 100%;
+}
+.payment-plan-screen-section {
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  background: url(../../images/normal-img.png) no-repeat center top;
+  background-size: cover;
+}
+.payment-plan-screen-section .payment-plan-screen-content{
+  padding: 1px 25px 30px;
+  background: rgba(0,0,0,0.85);
+  min-height: 100vh;
+}
+.payment-plan-screen-section .plans-section-content .plans-type-section:hover{
+  outline: 5px solid #fff;
+}
+.payment-plan-screen-content .payment-plan{
+  background: #151E26 ;
+  border-radius: 16px;
+  color: #fff;
+  max-width: 515px;
+  margin: 0 auto 30px;
+}
+
+.payment-plan-screen-section .payment-plan-screen-content h3{
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0px 3px 6px #0000001A;
+}
+.payment-plan-screen-section .payment-plan-screen-content .plans-section h3{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.payment-plan-screen-section .payment-plan-screen-content .plans-section{
+  display: none;
+}
+
+
+@media (max-width:991px) {
+  .payment-plan-screen-section .appbar-wrapper .appbar-right{
+    display: none;
+  }
+  
+}
+
+@media (min-width:768px) {
+  .payment-plan-screen-content .payment-plan{
+    background: rgba(21,30,38, 0.5);
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+}
+@media (min-width:1200px) {
+  .payment-plan-screen-section .payment-plan-screen-content{
+    padding: 3vh 3vw 5vh;
+      }
+    .payment-plan-screen-section .payment-plan-screen-content .plans-section{
+    display: block;
+  }
+  .payment-plan-screen-section .payment-plan-screen-content .tablet-mobile{
+    display: none;
+  }
+}
+
+@media (min-width:1400px) {
+  .tv-payment-plan.payment-plan-screen-section .appbar-section{
+    display: none;
+  }
+  
+  .tv-payment-plan.payment-plan-screen-section .payment-plan-screen-content{
+    padding: 70px;
+  }
+  .tv-payment-plan.payment-plan-screen-section .plans-section-content .plans-type-section:hover{
+    transform: scale(1.05);
+  }  
+}
+

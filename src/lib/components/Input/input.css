@@ -1,0 +1,57 @@
+.input-box-section {
+  margin-bottom: 40px;
+}
+
+.input-box-section .input--blunt {
+  border-radius: 5px !important;
+}
+
+.input-box-section .input--sharp {
+  border-radius: 0 !important;
+}
+
+.input--rounded {
+  border-radius: 50px !important;
+}
+
+.input-box-section label {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.input-box-section .input-box {
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid;
+  box-sizing: border-box;
+  outline: 1px solid;
+}
+
+.input-box-section .error {
+  color: red;
+}
+
+.input-box-section .sublabel {
+  display: block;
+  text-align: right;
+}
+
+.input--small {
+  width: 300px !important;
+  font-size: 14px;
+  padding: 6px;
+
+}
+
+.input--medium {
+  width: 450px !important;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.input--large {
+  width: 700px !important;
+  font-size: 18px;
+  padding: 10px;
+}

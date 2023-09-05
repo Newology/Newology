@@ -1,0 +1,6 @@
+<svg id="ic_tv" data-name="ic/tv" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="ic_viuOriginals_background" data-name="ic/viuOriginals background" width="40" height="40" fill="none"/>
+  <g id="ic_viuOriginals" data-name="ic/viuOriginals" transform="translate(5.833 5.833)">
+    <path id="Combined_Shape" data-name="Combined Shape" d="M4.149,24.184A14.166,14.166,0,1,1,24.184,4.15,14.166,14.166,0,1,1,4.149,24.184ZM5.87,5.87A11.734,11.734,0,0,0,22.463,22.464,11.734,11.734,0,1,0,5.87,5.87ZM9.182,21.909V19.184a.9.9,0,0,1,.523-.82l8.33-3.459a.8.8,0,0,0,.489-.737h0a.8.8,0,0,0-.489-.737L9.7,9.969a.9.9,0,0,1-.523-.818V6.424A.484.484,0,0,1,9.892,6l10.239,4.648a3.973,3.973,0,0,1,2.129,3.523h0a3.973,3.973,0,0,1-2.129,3.521L9.892,22.337a.465.465,0,0,1-.226.056A.483.483,0,0,1,9.182,21.909Z" fill="#fff"/>
+  </g>
+</svg>

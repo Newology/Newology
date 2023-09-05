@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+.sbdocs-wrapper .sbdocs-content{
+  max-width: 100%;
+}
+.details-container {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.details-container-section{
+  background: rgba(0,0,0,0.45);
+}
+
+.details-container .details-text-content-wrapper {
+  margin: 19vh 0 21vh;
+}
+.details-container .details-content-row > h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.details-container .details-content-container {
+  margin: 0 30px;
+}
+.details-container .detail-card-section{
+  max-width: 700px
+}
+.details-container .button-section .button-comp{
+  max-width: 700px
+}
+.details-container .screen-detailed-options {
+  display: block;
+  font-size: 18px;
+  padding-bottom: 83px;
+}
+.details-container .screen-detailed-options .slick-next,
+.details-container .screen-detailed-options .slick-prev{
+  top: 40% !important;
+}
+
+.details-container .screen-detailed-options .slick-slide{
+  padding-right: 20px;
+}
+
+.details-container-section .details-text-content-wrapper{
+  position: relative;
+}
+.details-container-section .details-text-content-wrapper .image-wrapper{
+  display: none;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.details-container-section .details-text-content-wrapper .text-container{
+  position: relative;
+}
+.tv-section .app-tv-bar{
+ display: none;
+}
+.tv-container .vertical-menu{
+  display: none;
+}
+
+@media  (max-width:991px){
+  
+  .details-container .details-content-row > h3 {
+    font-size: 22px;
+    font-weight: normal;
+  }
+  .details-container .details-text-content-wrapper {
+    margin: 10vh 0;
+  }
+  .details-container .screen-detailed-options {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 32px;
+  }
+  .details-container .screen-detailed-options .slick-slide{
+    padding-right: 20px;
+  }
+  .details-container .button--small {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .details-container .button--medium {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .details-container .button--large {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+@media  (max-width:767px){
+  .details-container-section .appbar-wrapper .app-options{
+    display: none;
+  }
+  .details-container-section{
+    background: rgba(0,0,0,1);
+  }
+  .details-container-section .details-text-content-wrapper{
+    position: relative;
+  }
+  .details-container-section .details-text-content-wrapper .image-wrapper{
+    display: block;
+    position: absolute;
+  }
+  .details-container .details-text-content-wrapper{
+    margin: 0;
+  }
+
+  .details-container .details-content-row > h3 {
+    font-size: 16px;
+  }
+  .details-container .screen-detailed-options {
+    padding-bottom: 40px;
+  }
+  .details-container .screen-detailed-options .slick-slide{
+    padding-right: 20px;
+  }
+  .details-container .details-text-content-wrapper{
+    padding: 22px 15px;
+    overflow: hidden;
+  }
+  .details-container .button--small {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .details-container .button--medium {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .details-container .button--large {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (min-width:1400px) {
+  .tv-section .appbar-wrapper{
+    position: absolute;
+    width: calc(100% - 2vw);
+    padding: 0 1vw;
+    box-sizing: border-box;
+  }
+  .tv-section .app-tv-bar{
+    display: block;
+   }
+  
+  .tv-container{
+    display: flex;
+  }
+  .tv-section .app-bar-section{
+    display: none;
+  }
+  .tv-container .vertical-menu{
+    width: 215px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tv-section .details-container{
+    font-family: "Proxima Nova", "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: calc(100% - 215px);
+    margin-left: -1px;
+
+  }
+  .tv-section .details-container .details-text-content-wrapper {
+    padding: 12vh 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .details-container .screen-detailed-options .slick-next {
+    top: 16% !important;
+    right: 0 !important;
+}
+.details-container .screen-detailed-options .slick-prev{
+  top: 16% !important;
+  left: 0 !important;
+}
+}
+
+

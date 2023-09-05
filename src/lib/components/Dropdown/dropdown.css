@@ -1,0 +1,88 @@
+.hide-dropdown {
+  display: none;
+}
+.show-dropdown {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  background: rgb(27, 24, 24);
+  width: auto;
+  min-width: 80px;
+  padding: 24px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+.dropdown-button {
+  color: white;
+  background-color: #ff1493;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  height: auto;
+  min-height: 40px;
+  width: auto;
+  min-width: 80px;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 4px;
+  padding: 0 8px;
+}
+.rotate {
+  transform: rotateZ(90deg);
+  color: white;
+}
+.arrow-icon {
+  color: white;
+}
+
+.dropdown-back-arrow {
+  color: white;
+}
+.dropdown-title {
+  color: white;
+  padding-bottom: 16px;
+  border-bottom: 2px solid grey;
+  margin-top: 16px;
+}
+.dropdown-items {
+  color: grey;
+  cursor: pointer;
+}
+.dropdown--dropdown1 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dropdown-back-arrow img {
+  width: 20px;
+  height: 20px;
+}
+.dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 32px;
+}
+.dropdown-items-wrapper {
+  margin-top: 16px;
+}
+.dropdown-item-active {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  padding: 8px;
+  margin-left: -8px;
+  cursor: pointer;
+}
+.dropdown-item-active::after {
+  content: "\002714";
+  color: white;
+  font-size: 14px;
+  margin-left: 8px;
+}

@@ -1,0 +1,84 @@
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .img--small {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .img--medium {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .img--large {
+    max-width: 200px;
+    max-height: 200px;
+  }  */
+
+.img--sharp {
+  border-radius: 0;
+}
+
+.img--blunt {
+  border-radius: 12px;
+}
+
+/* .img--Landscape {
+    width: 388px;
+  } */
+/* .img--Normal {
+    width: 240px;
+    height: 388px;
+  } */
+
+.img--Square.img--small {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.img--Square.img--medium {
+  max-width: 164px;
+  max-height: 164px;
+}
+
+.img--Square.img--large {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* .img--Square {
+    width: 164px;
+    height: 164px;
+  } */
+
+.img--Landscape.img--small {
+  max-width: 250px;
+  max-height: 100px;
+}
+
+.img--Landscape.img--medium {
+  width: 390px;
+  height: 240px;
+}
+
+.img--Landscape.img--large {
+  max-width: 490px;
+  max-height: 340px;
+}
+
+.img--Portrait.img--small {
+  width: 121px;
+  height: 260px;
+}
+
+.img--Portrait.img--medium {
+  width: 221px;
+  height: 360px;
+}
+.img--Portrait.img--large {
+  width: 321px;
+  height: 460px;
+}

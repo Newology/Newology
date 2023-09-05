@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+.sbdocs-wrapper .sbdocs-content{
+  max-width: 100%;
+}
+.media-player-container {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  background: #001122;
+}
+
+.media-player-container
+  .media-player-content-container
+  .media-player-text-content-wrapper {
+  margin: 8vh 0 9vh;
+}
+.media-player-container
+  .media-player-content-container
+  .media-player-content-row
+  > h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.media-player-container .media-player-content-container {
+  margin: 0 30px;
+}
+.media-player-container .media-player-content-row .detail-card-section {
+  max-width: 800px;
+}
+.media-player-container .media-player-content-row .button-section .button-comp {
+  max-width: 800px;
+}
+.media-player-container .media-player-content-row .screen-detailed-options {
+  display: block;
+  font-size: 18px;
+  padding-bottom: 83px;
+}
+
+.media-player-container
+  .media-player-content-row
+  .screen-detailed-options
+  .slick-slide {
+  padding-right: 20px;
+}
+
+.media-player-container
+  .media-player-container-section
+  .media-player-text-content-wrapper {
+  position: relative;
+}
+.media-player-container
+  .media-player-container-section
+  .media-player-text-content-wrapper
+  .image-wrapper {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.media-player-container
+  .media-player-container-section
+  .media-player-text-content-wrapper
+  .text-container {
+  position: relative;
+}
+.media-player-container
+  .media-player-container-section
+  .media-player-content-container
+  .media-player-text-content-wrapper
+  p {
+  font-size: 22px;
+}
+/* @media (max-width: 991px) {
+  .media-player-container .media-player-content-row > h3 {
+    font-size: 22px;
+    font-weight: normal;
+  }
+  .media-player-container .media-player-text-content-wrapper {
+    margin: 10vh 0;
+  }
+  .media-player-container .screen-detailed-options {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 32px;
+  }
+  .media-player-container .screen-detailed-options .slick-slide {
+    padding-right: 20px;
+  }
+  .media-player-container .button--small {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .media-player-container .button--medium {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .media-player-container .button--large {
+    font-size: 18px;
+    padding: 14px;
+  }
+} */
+@media (max-width: 767px) {
+  .media-player-container .media-player-container-section {
+    display: none;
+  }
+}

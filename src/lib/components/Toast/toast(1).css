@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+.toast-container{
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+.toast-wrapper {
+  background-color: #00264d;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 12px;
+  border-radius: 5px;
+  gap: 24px;
+}
+
+.toast-left {
+  color: white;
+  display: flex;
+  flex-basis: 70%;
+  gap: 10px;
+}
+.toast-right {
+  color: white;
+}
+.cancel-button {
+  cursor: pointer;
+}
+.update-button {
+  background-color: #eb0081;
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.alert-button {
+  background-color: rgb(224, 222, 222);
+  color: black;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.toast-alert-wrapper {
+  background-color: brown;
+  padding: 15px 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.toast-success-wrapper {
+  background-color: green;
+  padding: 15px 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.toast-wrapper.short-width {
+  width: 70%;
+}
+.toast-left.short-width {
+  width: 57%;
+  color: white;
+  display: flex;
+  flex-basis: 58%;;
+  gap: 10px;
+}
+.toast-alert-wrapper.short-width {
+  width: 70%;
+}
+.toast-success-wrapper.short-width {
+  width: 70%;
+}

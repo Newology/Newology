@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Live_TV" data-name="Live TV" transform="translate(-6844 -115.277)">
+    <rect id="Rectangle_126" data-name="Rectangle 126" width="22" height="22" transform="translate(6844 115.277)" fill="none"/>
+    <g id="tv_1_" data-name="tv (1)" transform="translate(6845.837 117.277)">
+      <path id="Shape" d="M14.51,17a.5.5,0,0,1-.353-.146l-.85-.85H3.726l-.85.85a.5.5,0,0,1-.7-.7L2.318,16H1.494A1.5,1.5,0,0,1,0,14.51V4.516A1.5,1.5,0,0,1,1.494,3.022H6.311L4.162.848A.5.5,0,0,1,4.516,0,.494.494,0,0,1,4.87.148L7.5,2.811,10.138.148A.5.5,0,0,1,10.99.5a.5.5,0,0,1-.144.353L8.7,3.022h6.809A1.5,1.5,0,0,1,17,4.516V14.51A1.5,1.5,0,0,1,15.506,16h-.79l.146.146a.5.5,0,0,1-.352.85ZM1.494,4.018a.5.5,0,0,0-.5.5V14.51a.5.5,0,0,0,.5.5H15.506a.5.5,0,0,0,.5-.5V4.516a.5.5,0,0,0-.5-.5Z" transform="translate(0.163)" fill="#afb3b8"/>
+      <path id="Shape-2" data-name="Shape" d="M8.5,9h-7A1.5,1.5,0,0,1,0,7.5v-6A1.5,1.5,0,0,1,1.5,0h7A1.5,1.5,0,0,1,10,1.5v6A1.5,1.5,0,0,1,8.5,9Zm-7-8a.5.5,0,0,0-.5.5v6a.5.5,0,0,0,.5.5h7A.5.5,0,0,0,9,7.5v-6A.5.5,0,0,0,8.5,1Z" transform="translate(2.163 5)" fill="#afb3b8"/>
+      <path id="Path" d="M.9,0a.9.9,0,1,0,.9.9A.9.9,0,0,0,.9,0Z" transform="translate(13.55 5.419)" fill="#afb3b8"/>
+      <path id="Path-2" data-name="Path" d="M1.355,0h-.9a.452.452,0,0,0,0,.9h.9a.452.452,0,0,0,0-.9Z" transform="translate(13.55 9.031)" fill="#afb3b8"/>
+      <path id="Path-3" data-name="Path" d="M1.355,0h-.9a.452.452,0,0,0,0,.9h.9a.452.452,0,0,0,0-.9Z" transform="translate(13.55 10.837)" fill="#afb3b8"/>
+      <path id="Path-4" data-name="Path" d="M1.355,0h-.9a.452.452,0,0,0,0,.9h.9a.452.452,0,0,0,0-.9Z" transform="translate(13.55 12.644)" fill="#afb3b8"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Mic" transform="translate(-6844 -115.277)">
+    <rect id="Rectangle_126" data-name="Rectangle 126" width="22" height="22" transform="translate(6844 115.277)" fill="none"/>
+    <g id="mic-2" data-name="mic" transform="translate(6849 116.277)">
+      <path id="Shape" d="M3.357,13.307A3.36,3.36,0,0,1,0,9.952v-6.6a3.357,3.357,0,0,1,6.713,0V9.974A3.348,3.348,0,0,1,3.357,13.307Zm0-11.909A1.96,1.96,0,0,0,1.4,3.356v6.6a1.958,1.958,0,0,0,3.916.023V3.356A1.96,1.96,0,0,0,3.357,1.4Z" transform="translate(2.614)" fill="#afb3b8"/>
+      <rect id="Rectangle" width="1.426" height="3.149" transform="translate(5.287 15.327)" fill="#afb3b8"/>
+      <path id="Path" d="M4.406,0H.7A.708.708,0,0,0,0,.713a.708.708,0,0,0,.7.713h3.7a.708.708,0,0,0,.7-.713A.708.708,0,0,0,4.406,0Z" transform="translate(3.446 17.762)" fill="#afb3b8"/>
+      <path id="Path-2" data-name="Path" d="M11.3,0a.7.7,0,0,0-.7.7v.559a4.6,4.6,0,0,1-9.2,0V.7A.7.7,0,0,0,0,.7v.559a6,6,0,0,0,12,0V.7A.7.7,0,0,0,11.3,0Z" transform="translate(0 8.792)" fill="#afb3b8"/>
+    </g>
+  </g>
+</svg>

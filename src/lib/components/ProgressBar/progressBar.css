@@ -1,0 +1,42 @@
+.general-progress-bar {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+progress {
+  width: 400px;
+  border: 0;
+  height: 4px;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #afb3b8;
+  border: 0;
+  height: 4px;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #da2128;
+  border: 0;
+  height: 4px;
+  border-radius: 8px;
+}
+
+.green progress::-webkit-progress-value {
+  background-color: green;
+  border: 0;
+  height: 4px;
+  border-radius: 8px;
+}
+
+/* .titleFontSize--large {    font-size: 22px;}.titleFontSize--medium {    font-size: 20px;}.titleFontSize--small {    font-size: 18px;} */
+.progress-bar-title {
+  max-width: 400px;
+}

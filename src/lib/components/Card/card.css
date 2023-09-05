@@ -1,0 +1,147 @@
+.card-container {
+  --landscape-ratio: 56.25%;
+  --channel-ratio: 100%;
+  --portrait-ratio: 140%;
+  --category-ratio: 32%;
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+.card-container.small {
+  width: 200px;
+}
+
+.card-container.medium {
+  width: 250px;
+}
+
+.card-container.large {
+  width: 300px;
+}
+
+.card-container.blunt {
+  border-radius: 10px;
+}
+
+.card-container.sharp {
+  border-radius: 0 !important;
+}
+
+.card-container.rounded {
+  border-radius: 50%;
+}
+/* .card-container.small.rounded {
+  width: 200px;
+  height: 200px;
+}
+.card-container.medium.rounded {
+  width: 250px;
+  height: 250px;
+}
+.card-container.large.rounded {
+  width: 300px;
+  height: 300px;
+} */
+.card-container .img-container {
+  position: relative;
+  width: 100%;
+  height: 0px;
+}
+
+.card-container.portrait .img-container {
+  padding-top: var(--portrait-ratio);
+}
+
+.card-container.landscape .img-container {
+  padding-top: var(--landscape-ratio);
+}
+
+.card-container.channel .img-container {
+  padding-top: var(--channel-ratio);
+}
+
+.card-container.channel {
+  box-shadow: 10px 10px 20px #0000001a;
+}
+.card-container.category .img-container {
+  padding-top: var(--category-ratio);
+}
+/* .card-container.category .img-container img{
+  width: auto;
+  height: 100px;
+} */
+.card-container.rounded .img-container {
+  padding-top: var(--channel-ratio) !important;
+}
+
+.img-container .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .card {
+  width: 100%;
+}
+.card--small {
+  max-width: 300px;
+}
+.card--medium {
+  max-width: 450px;
+}
+.card--large {
+  max-width: 700px ;
+}
+
+.card--landscape {
+  width: 500px !important;
+}
+.card--portrait {
+  width: 240px;
+  height: 387px;
+}
+.card--channel {
+  width: 240px;
+  height: 240px;
+}
+.card--category {
+  width: 200px;
+  height: 64px;
+}
+.card--blunt {
+  border-radius: 5px !important;
+}
+.card--sharp {
+  border-radius: 0 !important;
+}
+.card--rounded {
+  border-radius: 50% !important;
+}
+.card--rounded.card--small {
+  font-size: 12px;
+  max-width:300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 0;
+}
+.card--rounded.card--medium {
+  font-size: 12px;
+  max-width:450px;
+  max-height: 450px;
+  min-width: 450px;
+  min-height: 450px;
+  padding: 0;
+}
+.card--rounded.card--large {
+  font-size: 12px;
+  max-width:700px;
+  max-height: 700px;
+  min-width: 700px;
+  min-height: 700px;
+  padding: 0;
+} */

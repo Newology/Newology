@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+.rating-container {
+  display: flex;
+  cursor: pointer;
+}
+.star-container {
+  position: "relative";
+  cursor: pointer;
+}
+.filled-icon {
+  color: rgb(254, 180, 0);
+}
+.view-only-star-container {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  display: flex;
+  gap: 10px;
+}

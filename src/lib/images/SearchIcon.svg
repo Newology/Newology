@@ -1,0 +1,19 @@
+<svg id="Search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <filter id="Shape" x="9.5" y="11.5" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.204"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Background_Search_Shadow" data-name="Background Search Shadow">
+    <rect id="Background_Search" data-name="Background Search" width="53" height="53" rx="6" transform="translate(0.5 0.5)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+  <g id="Icon_Search" data-name="Icon Search" transform="translate(15.659 15.659)">
+    <g transform="matrix(1, 0, 0, 1, -15.66, -15.66)" filter="url(#Shape)">
+      <path id="Shape-2" data-name="Shape" d="M20.308,22a1.579,1.579,0,0,1-1.19-.5l-4.535-4.521a9.3,9.3,0,0,1-8.891.905A9.118,9.118,0,0,1,.734,12.924a9.279,9.279,0,0,1,0-7.232A9.118,9.118,0,0,1,5.691.734a9.279,9.279,0,0,1,7.232,0,9.118,9.118,0,0,1,4.958,4.958,9.3,9.3,0,0,1-.905,8.892l4.534,4.534A1.7,1.7,0,0,1,20.308,22Zm-11-18.615A5.726,5.726,0,0,0,5.124,5.124,5.726,5.726,0,0,0,3.385,9.308a5.729,5.729,0,0,0,1.739,4.184,5.729,5.729,0,0,0,4.184,1.738,5.732,5.732,0,0,0,4.184-1.738,5.732,5.732,0,0,0,1.738-4.184,5.725,5.725,0,0,0-1.738-4.184A5.729,5.729,0,0,0,9.308,3.385Z" transform="translate(15.5 15.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

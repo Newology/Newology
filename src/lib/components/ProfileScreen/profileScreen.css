@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800;900&display=swap");
+
+.profile-screen-section {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  background-color: #001122;
+}
+.profile-screen-section .profile-screen-content {
+  display: flex;
+  padding: 50px 40px;
+  gap: 100px;
+}
+
+.profile-screen-section .profile-screen-content .profile-screen-settings-list {
+  color: #a7a7a7;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  h3 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  p {
+  margin: 0;
+}
+
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li {
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  color: #a7a7a7;
+  margin-top: 55px;
+  line-height: 1.2;
+  padding: 20px 30px;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li .right-arrow{
+  display: none;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li.active-tab {
+  display: block;
+  background: white;
+  color: #000;
+}
+.profile-screen-section
+  .profile-screen-content
+  .profile-screen-detailed-section {
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-screen-detailed-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  font-size: 18px;
+}
+.profile-screen-detail-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-start;
+  font-size: 29px;
+  color: #ffffff;
+}
+.profile-screen-detailed-options .options-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile-screen-detailed-options .options-card .option {
+  font-size: 29px;
+  color: #868686;
+  margin: 0;
+}
+.profile-screen-detailed-options .options-card .option-detail {
+  font-size: 23px;
+  color: #ffffff;
+  margin: 0;
+}
+.profile-screen-section .profile-screen-content .profile-screen-menu-icon {
+  display: none;
+}
+.tv-container .vertical-menu-search-screen {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  .profile-screen-section .profile-screen-content {
+    flex-direction: column;
+  }
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res {
+    position: fixed;
+    background: black;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    height: 100%;
+    color: #a7a7a7;
+  }
+  .profile-screen-section .profile-screen-content .hide {
+    display: none;
+  }
+  .profile-screen-section .profile-screen-content .profile-screen-menu-icon {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    gap: 20px;
+  }
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-menu-icon
+    svg {
+    width: 40px;
+    height: 40px;
+    fill: #ffff;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res.close {
+    display: none;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res
+    h3 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res
+    p {
+    margin: 0;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res
+    ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res
+    ul
+    li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 25px;
+    color: #a7a7a7;
+    padding-top: 95px;
+    line-height: 1.2;
+    padding-top: 45px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #a7a7a7;
+  }
+
+  .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list-res
+    ul
+    li.active-tab {
+      display: flex;
+      justify-content: space-between;
+    color: white;
+    font-weight: 700;
+    padding-top: 45px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+  }
+  .profile-screen-section .profile-screen-content {
+    gap: 40px;
+  }
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-detailed-section {
+    gap: 40px;
+  }
+  .profile-screen-detailed-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width:767px) {
+  .profile-screen-detailed-options {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-detailed-section {
+    gap: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tv-container {
+    display: flex;
+  }
+  .tv-container .profile-screen-section  .appbar-top{
+    display: none;
+  }
+  .tv-container .vertical-menu-search-screen {
+    width: 215px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+  }
+  
+  .tv-container .profile-screen-section {
+    font-family: "Proxima Nova", "Montserrat", sans-serif;
+    background-color: #212121;
+    width: calc(100% - 215px);
+    margin-left: -1px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .tv-container .profile-screen-section .profile-screen-content {
+    display: flex;
+    padding: 0;
+    gap: 140px;
+    height: 100%;
+  } 
+  .tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list {
+  color: #a7a7a7;
+  padding: 112px 0px;
+  background-color: #151515;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  h3 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  padding: 0 40px;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  p {
+  margin: 0;
+  padding: 0 40px;
+}
+
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul {
+  list-style-type: none;
+  padding: 40px 0;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li {
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  color: #a7a7a7;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  padding: 25px 40px;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li
+  .right-arrow {
+  display: none;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-settings-list
+  ul
+  li.active-tab {
+  display: block;
+  background: #2c2c2c;
+  color: #fff;
+
+  border-right: 4px solid #9f2654;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-detailed-section {
+  gap: 83px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 112px;
+}
+.tv-container .profile-screen-detailed-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  font-size: 18px;
+}
+.tv-container .profile-screen-detail-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-start;
+  font-size: 29px;
+  color: #ffffff;
+}
+.tv-container .profile-screen-detailed-options .options-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tv-container .profile-screen-detailed-options .options-card .option {
+  font-size: 29px;
+  color: #868686;
+  margin: 0;
+}
+.tv-container .profile-screen-detailed-options .options-card .option-detail {
+  font-size: 23px;
+  color: #ffffff;
+  margin: 0;
+}
+.tv-container
+  .profile-screen-section
+  .profile-screen-content
+  .profile-screen-menu-icon {
+  display: none;
+}
+.tv-container
+    .profile-screen-section
+    .profile-screen-content
+    .profile-screen-settings-list
+    ul
+    li {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+}

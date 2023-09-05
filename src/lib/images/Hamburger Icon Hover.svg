@@ -1,0 +1,8 @@
+<svg id="Hamburger_Icon_Hover" data-name="Hamburger Icon Hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_126" data-name="Rectangle 126" width="24" height="24" fill="none"/>
+  <g id="Hamburger_Icon" data-name="Hamburger Icon" transform="translate(1 4)">
+    <rect id="Rectangle_4010" data-name="Rectangle 4010" width="20" height="2" rx="1" transform="translate(1 14)" fill="#dbdbdb"/>
+    <rect id="Rectangle_4011" data-name="Rectangle 4011" width="18" height="2" rx="1" transform="translate(1 7)" fill="#dbdbdb"/>
+    <rect id="Rectangle_4012" data-name="Rectangle 4012" width="16" height="2" rx="1" transform="translate(1)" fill="#dbdbdb"/>
+  </g>
+</svg>

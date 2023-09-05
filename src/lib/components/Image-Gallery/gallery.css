@@ -1,0 +1,23 @@
+img {
+  width: 100%;
+}
+.img--sharp {
+  border-radius: 0;
+}
+.img--blunt {
+  border-radius: 12px;
+}
+.img--rounded {
+  border-radius: 50%;
+}
+.imggal--FullWidth {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.imggal--Mini {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
