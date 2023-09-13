@@ -29,7 +29,7 @@ export const Badge = ({
               className={"badgeIcon"}
               width="18px"
               height="18px"
-              color={iconColor}
+              color={iconColor || "#ffff"}
             />
             <span style={{color: textColor || "#ffff"}}> {label} </span>
           </span>
@@ -58,4 +58,5 @@ Badge.defaultProps = {
   size: "medium",
   type: "rounded",
   icon: false, // specialNotificationIcon:false,
+  iconColor: "#ffff",
 };

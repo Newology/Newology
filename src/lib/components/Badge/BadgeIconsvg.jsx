@@ -7,13 +7,11 @@ export const BadgeIcon = ({width, height, className, color, ...props}) => (
     className={className}
     viewBox="0 0 20.569 20.335"
   >
-       {" "}
     <g
       id="Icon_feather-check-circle"
       data-name="Icon feather-check-circle"
       transform="translate(-2.008 0.944)"
     >
-           {" "}
       <path
         id="Path_57301"
         data-name="Path 57301"
@@ -25,7 +23,6 @@ export const BadgeIcon = ({width, height, className, color, ...props}) => (
         strokeLinejoin="round"
         strokeWidth={1.5}
       />
-           {" "}
       <path
         id="Path_57302"
         data-name="Path 57302"
@@ -37,8 +34,6 @@ export const BadgeIcon = ({width, height, className, color, ...props}) => (
         strokeLinejoin="round"
         strokeWidth={1.5}
       />
-         {" "}
     </g>
-     {" "}
   </svg>
 );
