@@ -76,6 +76,6 @@
     "react-icons": "^4.10.1"
   },
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com/Newology/Newology”
+  "registry": "https://npm.pkg.github.com/Newology/Newology"
 }
 }
