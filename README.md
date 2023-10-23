@@ -1,70 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# Newology
 
-### `npm start`
+Newology is TTN's internal Design System, a collection of pre-built, reusable assets - components, patterns, and interactions - along with usage guidelines and best practices to rapidly design and build consistent digital experiences.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📦 Install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install @newology/newology
 
-### `npm test`
+```
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🌈 Enterprise-class UI designed for web applications.
+- 📦 A set of high-quality React components out of the box.
+- 🛡 Reusability for the experienced design and front-end Engineering teams for rapid design and development
+- ⚙️ Whole package of design resources with PSD files.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔨 Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```jsx
+import React from 'react';
+import { Button, DatePicker } from 'newology';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const App = () => (
+  <>
+    <Button type="primary">PRESS ME</Button>
+    <DatePicker placeholder="select date" />
+  </>
+);
+```
+git clone locally:
 
-### `npm run eject`
+```bash
+$ git clone git@github.com:Newology/Newology.git
+$ cd Newology
+$ npm install
+$ npm start
+```
+## 🔗 Links
+- Newology demo link: http://15.206.186.125/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)
