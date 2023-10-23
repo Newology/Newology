@@ -41,7 +41,7 @@ $ npm install
 $ npm start
 ```
 ## 🔗 Links
-- Newology demo link: http://15.206.186.125/
+- Newology demo link: hhttps://newology.tothenew.com/
 
 ## License
 
