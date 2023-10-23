@@ -1,5 +1,5 @@
 {
-  "name": "newologytest",
+  "name": "@newology/newology",
   "version": "0.1.161",
   "private": false,
   "description": "UI design system",
@@ -76,6 +76,6 @@
     "react-icons": "^4.10.1"
   },
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com/Newology/Newology"
-}
+  "registry": "https://npm.pkg.github.com/"
+  }
 }
