@@ -12,6 +12,7 @@ import dummyImg from "../../images/dummyImg.png";
 import "./textcontent.css";
 import { RatingComponent } from "../RatingComponent/RatingComponent";
 import { Button } from "../Button/Button";
+
 export const TextContent = ({
   style,
   size,
@@ -34,28 +35,17 @@ export const TextContent = ({
   castList,
   ...props
 }) => {
-  const renderCastCircles = () => {
-    return (
-      <>
-        {castList.slice(0, 4).map((item, index) => (
+  const renderCastCircles = (initIndex, lastIndex) => {
+    if (castList && castList.length > 0) {
+      return castList.slice(initIndex, lastIndex).map((item, index) => {
+        return (
           <span key={index} className="cast-circle">
             <img src={item?.image} alt="cast-img" />
           </span>
-        ))}
-        {castList.length > 4 && (
-          <span className="cast-circle-count">
-            +{castList.length - 4}
-            <span className="tooltiptext">
-              {castList.slice(4, castList.length).map((item, index) => (
-                <span key={index} className="cast-circle">
-                  <img src={item?.image} alt="cast-img" />
-                </span>
-              ))}
-            </span>
-          </span>
-        )}
-      </>
-    );
+        );
+      });
+    }
+    return <></>;
   };
   return (
     <div title="image" className={`text-container ${style} ${size}`} {...props}>
@@ -176,7 +166,17 @@ export const TextContent = ({
           <div className="style6-row3-text">{description}</div>
           <div className="style6-row4">
             <span className="style6-cast-text">Cast</span>
-            <span className="cast-wrapper">{renderCastCircles()}</span>
+            <span className="cast-wrapper">
+              {renderCastCircles(0, 4)}
+              {castList.length > 4 ? (
+                <span className="cast-circle-count">
+                  +{castList.length - 4}
+                  <span class="tooltiptext">
+                    {renderCastCircles(4, castList.length)}
+                  </span>
+                </span>
+              ) : null}
+            </span>
           </div>
           <div className="style6-row5">
             <span className="badge-icon-watchlist">
@@ -202,7 +202,17 @@ export const TextContent = ({
           <div className="style7-row3-text">{description}</div>
           <div className="style6-row4">
             <span className="style6-cast-text">Cast</span>
-            <span className="cast-wrapper">{renderCastCircles()}</span>
+            <span className="cast-wrapper">
+              {renderCastCircles(0, 4)}
+              {castList.length > 4 ? (
+                <span className="cast-circle-count">
+                  +{castList.length - 4}
+                  <span class="tooltiptext">
+                    {renderCastCircles(4, castList.length)}
+                  </span>
+                </span>
+              ) : null}
+            </span>
           </div>
           <div className="style7-row4-genre">
             <span className="style7-cast-genre">Genre</span>
@@ -289,24 +299,12 @@ export const TextContent = ({
               Cast
             </span>
             <span className="cast-wrapper">
-              {castList.slice(0, 4).map((item, index) => {
-                return (
-                  <span className="cast-circle">
-                    <img src={item?.image} alt="cast-img" />
-                  </span>
-                );
-              })}
+              {renderCastCircles(0, 4)}
               {castList.length > 4 ? (
                 <span className="cast-circle-count">
                   +{castList.length - 4}
                   <span class="tooltiptext">
-                    {castList.slice(4, castList.length).map((item, index) => {
-                      return (
-                        <span className="cast-circle">
-                          <img src={item?.image} alt="cast-img" />
-                        </span>
-                      );
-                    })}
+                    {renderCastCircles(4, castList.length)}
                   </span>
                 </span>
               ) : null}
