@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlus,
   faCaretRight,
@@ -10,50 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import dummyImg from "../../images/dummyImg.png";
 import "./textcontent.css";
-import {RatingComponent} from "../RatingComponent/RatingComponent";
+import { RatingComponent } from "../RatingComponent/RatingComponent";
 import { Button } from "../Button/Button";
-
-// const data = {
-//   id: "1",
-//   rating: 8,
-//   textGenre: "Action, Adventure, Fantasy",
-//   title: "Planet Of The Apes",
-//   description:
-//     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-//   heading: "Scandal! Catchup",
-//   badgeText: "2019",
-//   badgeText: "English",
-//   badgeText: "Drama",
-//   badgeText: "120",
-//   language: "English, Hindi",
-//   duration: "2Hr 30M",
-//   time: "2021",
-//   buttonText: "Watch",
-//   director: "John Lennon",
-//   castList: [
-//     {
-//       id: "1",
-//       image: dummyImg,
-//     },
-//     {
-//       id: "2",
-//       image: dummyImg,
-//     },
-//     {
-//       id: "3",
-//       image: dummyImg,
-//     },
-//     {
-//       id: "4",
-//       image: dummyImg,
-//     },
-//     {
-//       id: "5",
-//       image: dummyImg,
-//     },
-//   ],
-// };
-
 export const TextContent = ({
   style,
   size,
@@ -67,7 +25,7 @@ export const TextContent = ({
   badgeIconOne,
   description,
   heading,
-  badgeText,
+  badgeTextList,
   time,
   duration,
   tag,
@@ -76,17 +34,36 @@ export const TextContent = ({
   castList,
   ...props
 }) => {
-  // const [detailed, setDetailed] = useState(dataSource || data);
-
-  console.log("props");
-
+  const renderCastCircles = () => {
+    return (
+      <>
+        {castList.slice(0, 4).map((item, index) => (
+          <span key={index} className="cast-circle">
+            <img src={item?.image} alt="cast-img" />
+          </span>
+        ))}
+        {castList.length > 4 && (
+          <span className="cast-circle-count">
+            +{castList.length - 4}
+            <span className="tooltiptext">
+              {castList.slice(4, castList.length).map((item, index) => (
+                <span key={index} className="cast-circle">
+                  <img src={item?.image} alt="cast-img" />
+                </span>
+              ))}
+            </span>
+          </span>
+        )}
+      </>
+    );
+  };
   return (
     <div title="image" className={`text-container ${style} ${size}`} {...props}>
       {style === "style1" ? (
         <div className="style1-wrapper">
           <div className="style1-row1">
             <RatingComponent style={`view-only`} viewOnlyRating={rating} />
-            <span className="text-genre" style={color && {color}}>
+            <span className="text-genre" style={color && { color }}>
               {textGenre}
             </span>
           </div>
@@ -106,11 +83,11 @@ export const TextContent = ({
 
       {style === "style2" ? (
         <div className="style2-wrapper">
-          <div className="style2-row1" style={color && {color}}>
+          <div className="style2-row1" style={color && { color }}>
             {title}
           </div>
           <div className="style2-row2">
-            <span className="style2-text-genre" style={color && {color}}>
+            <span className="style2-text-genre" style={color && { color }}>
               {textGenre}
             </span>
             <RatingComponent />
@@ -123,7 +100,7 @@ export const TextContent = ({
 
       {style === "style3" ? (
         <div className="style3-wrapper">
-          <div className="style3-row1" style={color && {color}}>
+          <div className="style3-row1" style={color && { color }}>
             {title}
           </div>
           <div className="style3-row2">
@@ -146,11 +123,11 @@ export const TextContent = ({
 
       {style === "style4" ? (
         <div className="style4-wrapper">
-          <div className="style4-row1" style={color && {color}}>
+          <div className="style4-row1" style={color && { color }}>
             {heading}
           </div>
           <div className="style4-row2">
-            {badgeText.map((item, index) => {
+            {badgeTextList.map((item, index) => {
               return (
                 <span key={index} className="style4-text-genre">
                   {item?.badgeName}
@@ -158,7 +135,7 @@ export const TextContent = ({
               );
             })}
           </div>
-          <div className="style4-row3" style={color && {color}}>
+          <div className="style4-row3" style={color && { color }}>
             {title}
           </div>
           <div className="style4-row4-text">{description}</div>
@@ -169,7 +146,7 @@ export const TextContent = ({
         <div className="style5-wrapper">
           <div className="style5-row1">{heading}</div>
           <div className="style5-row2">
-            {badgeText.map((item, index) => {
+            {badgeTextList.map((item, index) => {
               return (
                 <span key={index} className="style5-text-genre">
                   {item?.badgeName}
@@ -177,7 +154,7 @@ export const TextContent = ({
               );
             })}
           </div>
-          <div className="style5-row3" style={color && {color}}>
+          <div className="style5-row3" style={color && { color }}>
             {title}
           </div>
           <div className="style5-row4-text">{description}</div>
@@ -193,35 +170,13 @@ export const TextContent = ({
             <RatingComponent style={`view-only`} viewOnlyRating={rating} />
             <span className="style6-text-genre">{textGenre}</span>
           </div>
-          <div className="style6-row3" style={color && {color}}>
+          <div className="style6-row3" style={color && { color }}>
             {title}
           </div>
           <div className="style6-row3-text">{description}</div>
           <div className="style6-row4">
             <span className="style6-cast-text">Cast</span>
-            <span className="cast-wrapper">
-              {castList.slice(0, 4).map((item, index) => {
-                return (
-                  <span key={index} className="cast-circle">
-                    <img src={item?.image} alt="cast-img" />
-                  </span>
-                );
-              })}
-              {castList.length > 4 ? (
-                <span className="cast-circle-count">
-                  +{castList.length - 4}
-                  <span class="tooltiptext">
-                    {castList.slice(4, castList.length).map((item, index) => {
-                      return (
-                        <span key={index} className="cast-circle">
-                          <img src={item?.image} alt="cast-img" />
-                        </span>
-                      );
-                    })}
-                  </span>
-                </span>
-              ) : null}
-            </span>
+            <span className="cast-wrapper">{renderCastCircles()}</span>
           </div>
           <div className="style6-row5">
             <span className="badge-icon-watchlist">
@@ -237,7 +192,7 @@ export const TextContent = ({
       ) : null}
       {style === "style7" ? (
         <div className="style7-wrapper">
-          <div className="style7-row1" style={color && {color}}>
+          <div className="style7-row1" style={color && { color }}>
             {heading}
           </div>
           <div className="style7-row2">
@@ -247,29 +202,7 @@ export const TextContent = ({
           <div className="style7-row3-text">{description}</div>
           <div className="style6-row4">
             <span className="style6-cast-text">Cast</span>
-            <span className="cast-wrapper">
-              {castList.slice(0, 4).map((item, index) => {
-                return (
-                  <span key={index} className="cast-circle">
-                    <img src={item?.image} alt="cast-img" />
-                  </span>
-                );
-              })}
-              {castList.length > 4 ? (
-                <span className="cast-circle-count">
-                  +{castList.length - 4}
-                  <span class="tooltiptext">
-                    {castList.slice(4, castList.length).map((item, index) => {
-                      return (
-                        <span key={index} className="cast-circle">
-                          <img src={item?.image} alt="cast-img" />
-                        </span>
-                      );
-                    })}
-                  </span>
-                </span>
-              ) : null}
-            </span>
+            <span className="cast-wrapper">{renderCastCircles()}</span>
           </div>
           <div className="style7-row4-genre">
             <span className="style7-cast-genre">Genre</span>
@@ -303,11 +236,11 @@ export const TextContent = ({
       {style === "style8" ? (
         <div className="style5-wrapper">
           <div className="style8-live-tag"> {tag}</div>
-          <div className="style5-row1" style={color && {color}}>
+          <div className="style5-row1" style={color && { color }}>
             {title}
           </div>
           <div className="style5-row2">
-            {badgeText.map((item, index) => {
+            {badgeTextList.map((item, index) => {
               return (
                 <span key={index} className="style5-text-genre">
                   {item?.badgeName}
@@ -324,8 +257,8 @@ export const TextContent = ({
       ) : null}
       {style === "style9" ? (
         <div className="style9-wrapper">
-          <div className="style9-row1" style={color && {color}}>
-            UEFA <b style={{color: "gold"}}>FOOTBALL</b> LEAGUE
+          <div className="style9-row1" style={color && { color }}>
+            UEFA <b style={{ color: "gold" }}>FOOTBALL</b> LEAGUE
           </div>
           <div>
             <span className="badge-icon-watch">
@@ -338,21 +271,21 @@ export const TextContent = ({
 
       {style === "style10" ? (
         <div className="style12-wrapper">
-          <div className="style7-row1" style={color && {color}}>
+          <div className="style7-row1" style={color && { color }}>
             {heading}
           </div>
-          <p style={color && {color}}>{textGenre}</p>
+          <p style={color && { color }}>{textGenre}</p>
           <div className="style12-row2">
             <RatingComponent style={`view-only`} viewOnlyRating={rating} />
-            <span className="style7-text-genre" style={color && {color}}>
+            <span className="style7-text-genre" style={color && { color }}>
               | {time}
             </span>
           </div>
-          <div className="style7-row3-text" style={color && {color}}>
+          <div className="style7-row3-text" style={color && { color }}>
             {description}
           </div>
           <div className="style6-row4">
-            <span className="style6-cast-text" style={color && {color}}>
+            <span className="style6-cast-text" style={color && { color }}>
               Cast
             </span>
             <span className="cast-wrapper">
@@ -399,40 +332,43 @@ export const TextContent = ({
 
       {style === "style11" ? (
         <div className="detail-card-section style13-wrapper">
-          <h3 className="title" style={color && {color}}>
+          <h3 className="title" style={color && { color }}>
             {title}
           </h3>
-          <div className="sub-title-section" style={color && {color}}>
+          <div className="sub-title-section" style={color && { color }}>
             {textGenre && (
-              <span style={{borderColor: color}} className="sub-title-heading">
+              <span
+                style={{ borderColor: color }}
+                className="sub-title-heading"
+              >
                 {textGenre}
               </span>
             )}
             {duration && (
-              <span style={{borderColor: color}} className="duration">
+              <span style={{ borderColor: color }} className="duration">
                 {duration}
               </span>
             )}
             {time && (
-              <span style={{borderColor: color}} className="time">
+              <span style={{ borderColor: color }} className="time">
                 {time}
               </span>
             )}
           </div>
           {description && (
-            <p className="description" style={color && {color}}>
+            <p className="description" style={color && { color }}>
               {description}
             </p>
           )}
           <div className="information">
             <ul>
               {director && (
-                <li style={color && {color}}>
+                <li style={color && { color }}>
                   <span>Director</span> {director}
                 </li>
               )}
               {language && (
-                <li style={color && {color}}>
+                <li style={color && { color }}>
                   <span>Language</span> {language}
                 </li>
               )}
@@ -442,11 +378,11 @@ export const TextContent = ({
       ) : null}
       {style === "style12" ? (
         <div className="detail-card-section style13-wrapper">
-          <h3 className="title" style={color && {color}}>
+          <h3 className="title" style={color && { color }}>
             {title}
           </h3>
           {description && (
-            <p className="description" style={color && {color}}>
+            <p className="description" style={color && { color }}>
               {description}
             </p>
           )}
@@ -455,8 +391,8 @@ export const TextContent = ({
 
       {style === "style13" ? (
         <div className="style11-wrapper">
-          <h3 style={color && {color}}>{title}</h3>
-          <p style={color && {color}}>{textGenre}</p>
+          <h3 style={color && { color }}>{title}</h3>
+          <p style={color && { color }}>{textGenre}</p>
           <Button
             type={"sharp"}
             fill={"filled"}
@@ -491,7 +427,7 @@ TextContent.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   heading: PropTypes.string,
-  badgeText: PropTypes.array,
+  badgeTextList: PropTypes.array,
   language: PropTypes.string,
   duration: PropTypes.string,
   time: PropTypes.string,
@@ -511,7 +447,7 @@ TextContent.defaultProps = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   heading: "Scandal! Catchup",
   tag: "LIVE",
-  badgeText: [
+  badgeTextList: [
     {
       id: "1",
       badgeName: "2019",
