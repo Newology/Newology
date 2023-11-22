@@ -37,7 +37,8 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-icons": "^4.10.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -68,7 +69,7 @@
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "cross-env": "^7.0.3",
-    "react-icons": "^4.10.1"
+ 
   },
   "peerDependencies": {
     "react": "^18.2.0",
