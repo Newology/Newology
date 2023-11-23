@@ -1,6 +1,6 @@
 {
   "name": "@newology/newology",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "private": false,
   "description": "UI design system",
   "author": "TTN",
@@ -68,8 +68,7 @@
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
-    "cross-env": "^7.0.3",
- 
+    "cross-env": "^7.0.3"
   },
   "peerDependencies": {
     "react": "^18.2.0",
